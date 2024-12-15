@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="GLOBAL" XmlFormat="27">
+    <Language Code="fr"/>
+    <FailSafeFileCopy Enabled="true"/>
+    <CopyLockedFiles Enabled="true"/>
+    <CopyFilePermissions Enabled="false"/>
+    <FileTimeTolerance Seconds="2"/>
+    <RunWithBackgroundPriority Enabled="false"/>
+    <LockDirectoriesDuringSync Enabled="false"/>
+    <VerifyCopiedFiles Enabled="false"/>
+    <LogFiles MaxAge="30" Format="HTML"/>
+    <ProgressDialog AutoClose="false"/>
+    <OptionalDialogs>
+        <ConfirmStartSync Show="false"/>
+        <ConfirmSaveConfig Show="true"/>
+        <ConfirmSwapSides Show="true"/>
+        <ConfirmCommandMassInvoke Show="true"/>
+        <WarnFolderNotExisting Show="false"/>
+        <WarnFoldersDifferInCase Show="true"/>
+        <WarnUnresolvedConflicts Show="true"/>
+        <WarnNotEnoughDiskSpace Show="true"/>
+        <WarnSignificantDifference Show="false"/>
+        <WarnRecycleBinNotAvailable Show="false"/>
+        <WarnInputFieldEmpty Show="true"/>
+        <WarnDependentFolderPair Show="false"/>
+        <WarnDependentBaseFolders Show="true"/>
+        <WarnDirectoryLockFailed Show="true"/>
+        <WarnVersioningFolderPartOfSync Show="true"/>
+    </OptionalDialogs>
+    <Sounds>
+        <CompareFinished Path=""/>
+        <SyncFinished Path="%ffs_path%\Resources\bell.wav"/>
+        <AlertPending Path="%ffs_path%\Resources\remind.wav"/>
+    </Sounds>
+    <MainDialog>
+        <SearchPanel CaseSensitive="false"/>
+        <ConfigPanel ScrollPos="0" SyncOverdue="7" SortByColumn="Name" SortAscending="true">
+            <Configurations MaxSize="100" LastSelected="C:\Users\rivoi\Documents\BkpScripts\1-SyncSettings.ffs_batch">
+                <Item LastSync="0" Result="Stopped" Config="C:\Users\rivoi\AppData\Roaming\FreeFileSync\LastRun.ffs_gui" Log="" Items="0" Bytes="0" TotalTime="0" Errors="0" Warnings="0" Color="DDDDDD"/>
+                <Item LastSync="1729444555" Result="Success" Config="C:\Users\rivoi\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch" Log="C:\Users\rivoi\AppData\Roaming\FreeFileSync\Logs\Nuage-SyncSettings 2024-10-20 131555.013.html" Items="0" Bytes="0" TotalTime="7891" Errors="0" Warnings="0"/>
+                <Item LastSync="1729444564" Result="Success" Config="C:\Users\rivoi\Documents\BkpScripts\1-SyncSettings.ffs_batch" Log="C:\Users\rivoi\AppData\Roaming\FreeFileSync\Logs\1-SyncSettings 2024-10-20 131604.788.html" Items="0" Bytes="0" TotalTime="3558" Errors="0" Warnings="0"/>
+            </Configurations>
+            <LastUsed>
+                <Item>C:\Users\rivoi\AppData\Roaming\FreeFileSync\LastRun.ffs_gui</Item>
+            </LastUsed>
+        </ConfigPanel>
+        <OverviewPanel ShowPercentage="true" SortByColumn="Bytes" SortAscending="false"/>
+        <FilePanel ShowIcons="true" IconSize="Small" SashOffset="0" FolderPairsMax="6" PathFormatLeft="Relative" PathFormatRight="Relative">
+            <FolderHistoryLeft LastSelected="C:\Users\rivoi\Videos\Danièle">
+                <Item>C:\Users\rivoi\Videos\Danièle</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\GoogleDrive\PoidsPression</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Santé</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Parents</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Voiture</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Impôts</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Scotia</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\CV_Vincent</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Factures</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240.Chambly</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\Jobs</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents\zip</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\Documents</Item>
+                <Item>D:\</Item>
+                <Item>C:\Users\rivoi\Icedrive</Item>
+                <Item>C:\Users\rivoi\iCloudDrive</Item>
+                <Item>C:\Users\rivoi\Mega</Item>
+                <Item>C:\Users\rivoi\Dropbox</Item>
+                <Item>C:\Users\rivoi\OneDrive</Item>
+            </FolderHistoryLeft>
+            <FolderHistoryRight LastSelected="O:\">
+                <Item>O:\</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Santé</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Parents</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Voiture</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Impôts</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\BkpScripts</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Scotia</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\CV_Vincent</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Factures</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\302-4240.Chambly</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Jobs</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\zip</Item>
+                <Item>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%</Item>
+                <Item>H:\</Item>
+                <Item>D:\Vincent\Icedrive</Item>
+                <Item>D:\Vincent\iCloudDrive</Item>
+                <Item>D:\Vincent\Mega</Item>
+                <Item>D:\Vincent\Dropbox</Item>
+                <Item>D:\Vincent\OneDrive</Item>
+            </FolderHistoryRight>
+        </FilePanel>
+        <ManualCopyTo KeepRelativePaths="false" OverwriteIfExists="false">
+            <FolderHistory TargetFolder="" LastSelected=""/>
+        </ManualCopyTo>
+        <DefaultViewFilter Equal="false" Conflict="true" Excluded="false">
+            <Difference LeftOnly="true" RightOnly="true" LeftNewer="true" RightNewer="true" Different="true"/>
+            <Action CreateLeft="true" CreateRight="true" UpdateLeft="true" UpdateRight="true" DeleteLeft="true" DeleteRight="true" DoNothing="true"/>
+        </DefaultViewFilter>
+    </MainDialog>
+    <FolderHistory MaxSize="20"/>
+    <SftpKeyFile LastSelected=""/>
+    <DefaultFilter>
+        <Include>
+            <Item>*</Item>
+        </Include>
+        <Exclude>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLE?\</Item>
+            <Item>*\thumbs.db</Item>
+        </Exclude>
+        <SizeMin Unit="None">0</SizeMin>
+        <SizeMax Unit="None">0</SizeMax>
+        <TimeSpan Type="None">0</TimeSpan>
+    </DefaultFilter>
+    <VersioningFolderHistory LastSelected=""/>
+    <LogFolder>C:\Users\rivoi\AppData\Roaming\FreeFileSync\Logs</LogFolder>
+    <LogFolderHistory LastSelected="">
+        <Item>C:\Users\rivoi\AppData\Roaming\FreeFileSync\Logs</Item>
+    </LogFolderHistory>
+    <EmailHistory MaxSize="10"/>
+    <CommandHistory MaxSize="10"/>
+    <ExternalApps>
+        <Item Label="Show in Explorer">explorer.exe /select, "%local_path%" &amp; exit 0</Item>
+        <Item Label="Open with default application">explorer.exe "%local_path%" &amp; exit 0</Item>
+    </ExternalApps>
+    <LastOnlineCheck>1728906639</LastOnlineCheck>
+    <LastOnlineVersion>13.7</LastOnlineVersion>
+    <WelcomeDialogVersion>13.7</WelcomeDialogVersion>
+    <DpiLayouts>
+        <Layout Scale="100%">
+            <MainWindow Width="1614" Height="950" PosX="708" PosY="307" Maximized="false"/>
+            <ProgressDialog Width="1251" Height="884" Maximized="false"/>
+            <Panels>layout2|name=CenterPanel;caption=;state=256;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=504;besth=45;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=TopPanel;caption=Barre Principale;state=2099708;dir=1;layer=2;row=1;pos=0;prop=100000;bestw=622;besth=43;minw=170;minh=43;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ProgressPanel;caption=;state=2097662;dir=1;layer=2;row=2;pos=0;prop=100000;bestw=749;besth=98;minw=-1;minh=98;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=FoldersPanel;caption=Paires de Dossiers;state=2099708;dir=1;layer=2;row=3;pos=0;prop=100000;bestw=-1;besth=48;minw=100;minh=48;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SearchPanel;caption=Rechercher;state=2099710;dir=3;layer=2;row=3;pos=0;prop=100000;bestw=460;besth=27;minw=100;minh=27;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=LogPanel;caption=Log;state=6293502;dir=3;layer=2;row=2;pos=0;prop=100000;bestw=600;besth=300;minw=100;minh=100;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ViewFilterPanel;caption=Configuration de la vue;state=2099708;dir=3;layer=2;row=1;pos=0;prop=100000;bestw=554;besth=47;minw=80;minh=47;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ConfigPanel;caption=Configuration;state=2099196;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=282;besth=82;minw=282;minh=55;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=OverviewPanel;caption=Aperçu;state=2099196;dir=4;layer=3;row=0;pos=1;prop=100000;bestw=300;besth=20;minw=100;minh=100;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=504|dock_size(1,2,1)=52|dock_size(1,2,3)=48|dock_size(3,2,1)=47|dock_size(4,3,0)=302|</Panels>
+            <ConfigPanel>
+                <Item Type="Name" Visible="true" Width="-107" Stretch="1"/>
+                <Item Type="Last" Visible="true" Width="65" Stretch="0"/>
+                <Item Type="Log" Visible="true" Width="42" Stretch="0"/>
+            </ConfigPanel>
+            <OverviewPanel>
+                <Item Type="Tree" Visible="true" Width="-120" Stretch="1"/>
+                <Item Type="Count" Visible="true" Width="60" Stretch="0"/>
+                <Item Type="Bytes" Visible="true" Width="60" Stretch="0"/>
+            </OverviewPanel>
+            <FilePanelLeft>
+                <Item Type="Path" Visible="true" Width="-75" Stretch="1"/>
+                <Item Type="Ext" Visible="false" Width="60" Stretch="0"/>
+                <Item Type="Date" Visible="false" Width="110" Stretch="0"/>
+                <Item Type="Size" Visible="true" Width="75" Stretch="0"/>
+            </FilePanelLeft>
+            <FilePanelRight>
+                <Item Type="Path" Visible="true" Width="-75" Stretch="1"/>
+                <Item Type="Ext" Visible="false" Width="60" Stretch="0"/>
+                <Item Type="Date" Visible="false" Width="110" Stretch="0"/>
+                <Item Type="Size" Visible="true" Width="75" Stretch="0"/>
+            </FilePanelRight>
+        </Layout>
+    </DpiLayouts>
+</FreeFileSync>

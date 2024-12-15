@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sudo apt update && sudo apt upgrade && sudo apt-get --with-new-pkgs upgrade
+
+sudo apt autoremove
+
+lsb_release -a
+
+do-release-upgrade
+
+sudo aptitude safe-upgrade
+
+lsb_release -d

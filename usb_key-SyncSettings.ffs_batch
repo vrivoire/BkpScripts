@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FreeFileSync XmlType="BATCH" XmlFormat="23">
+	<Notes/>
+	<Compare>
+		<Variant>TimeAndSize</Variant>
+		<Symlinks>Exclude</Symlinks>
+		<IgnoreTimeShift/>
+	</Compare>
+	<Synchronize>
+		<Differences LeftOnly="right" LeftNewer="right" RightNewer="right" RightOnly="right"/>
+		<DeletionPolicy>RecycleBin</DeletionPolicy>
+		<VersioningFolder Style="Replace"/>
+	</Synchronize>
+	<Filter>
+		<Include>
+			<Item>*</Item>
+		</Include>
+		<Exclude>
+			<Item>\System Volume Information\</Item>
+			<Item>\$Recycle.Bin\</Item>
+			<Item>\RECYCLER\</Item>
+			<Item>\RECYCLED\</Item>
+			<Item>*\desktop.ini</Item>
+			<Item>*\thumbs.db</Item>
+			<Item>.*</Item>
+		</Exclude>
+		<SizeMin Unit="None">0</SizeMin>
+		<SizeMax Unit="None">0</SizeMax>
+		<TimeSpan Type="None">0</TimeSpan>
+	</Filter>
+	<FolderPairs>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%</Right>
+			<Filter>
+				<Include>
+					<Item>*</Item>
+				</Include>
+				<Exclude>
+					<Item>\System Volume Information\</Item>
+					<Item>\$Recycle.Bin\</Item>
+					<Item>\RECYCLER\</Item>
+					<Item>\RECYCLED\</Item>
+					<Item>*\desktop.ini</Item>
+					<Item>*\thumbs.db</Item>
+					<Item>*\RecycleBin*</Item>
+					<Item>.*</Item>
+					<Item>*\</Item>
+				</Exclude>
+				<SizeMin Unit="None">0</SizeMin>
+				<SizeMax Unit="None">0</SizeMax>
+				<TimeSpan Type="None">0</TimeSpan>
+			</Filter>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\zip</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\zip</Right>
+		</Pair>
+<!-- 		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Jobs</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Jobs</Right>
+		</Pair> -->
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\302-4240 Chambly</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Factures</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Factures</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\CV_Vincent</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\CV_Vincent</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Scotia</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Scotia</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\BkpScripts</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Impôts</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Impôts</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Voiture</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Voiture</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Parents</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Parents</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Santé</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\Santé</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\PoidsPression</Left>
+			<Right>%USB_DRIVE%\%USERDOMAIN%\PoidsPression</Right>
+		</Pair>
+		<Pair>
+			<Left>G:\My Drive</Left>
+			<Right>%USB_DRIVE%</Right>
+			<Filter>
+				<Include>
+					<Item>*</Item>
+				</Include>
+				<Exclude>
+					<Item>*.gsheet</Item>
+					<Item>\System Volume Information\</Item>
+					<Item>\$Recycle.Bin\</Item>
+					<Item>\RECYCLER\</Item>
+					<Item>\RECYCLED\</Item>
+					<Item>*\desktop.ini</Item>
+					<Item>*\thumbs.db</Item>
+					<Item>*\.Trash</Item>
+					<Item>*\.dropbox.cache</Item>
+					<Item>*\Rubbish</Item>
+					<Item>.*</Item>
+					<Item>*\</Item>
+				</Exclude>
+				<SizeMin Unit="None">0</SizeMin>
+				<SizeMax Unit="None">0</SizeMax>
+				<TimeSpan Type="None">0</TimeSpan>
+			</Filter>
+		</Pair>
+		<Pair>
+			<Left>G:\My Drive\PoidsPression</Left>
+			<Right>%USB_DRIVE%\PoidsPression</Right>
+			<Filter>
+				<Include>
+					<Item>*</Item>
+				</Include>
+				<Exclude>
+					<Item>\System Volume Information\</Item>
+					<Item>\$Recycle.Bin\</Item>
+					<Item>\RECYCLER\</Item>
+					<Item>\RECYCLED\</Item>
+					<Item>*\desktop.ini</Item>
+					<Item>*\thumbs.db</Item>
+					<Item>*\RecycleBin*</Item>
+					<Item>.*</Item>
+				</Exclude>
+				<SizeMin Unit="None">0</SizeMin>
+				<SizeMax Unit="None">0</SizeMax>
+				<TimeSpan Type="None">0</TimeSpan>
+			</Filter>
+		</Pair>
+	</FolderPairs>
+	<Errors Ignore="false" Retry="0" Delay="5"/>
+	<PostSyncCommand Condition="Completion"/>
+	<LogFolder/>
+	<EmailNotification Condition="Always"/>
+	<GridViewType>Action</GridViewType>
+	<Batch>
+		<ProgressDialog Minimized="false" AutoClose="true"/>
+		<ErrorDialog>Show</ErrorDialog>
+		<PostSyncAction>None</PostSyncAction>
+	</Batch>
+</FreeFileSync>
