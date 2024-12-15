@@ -34,7 +34,7 @@ for %%A in (D I) do (
 	%%A:
 	cd %%A:\
 	FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do del /q /f /s "%%G"
-	rem FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do rmdir /s /q "%%G"
+	FOR /D /r %%G in (RecycleBin*.ffs_tmp) do rmdir /s /q "%%G"
 )
 
 for %%A in (2 3) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A
@@ -114,7 +114,7 @@ REM 	exit /b
 	@echo Remove %HOMEDRIVE%%HOMEPATH%\*.ffs_lock ffs_tmp
 	cd %HOMEDRIVE%%HOMEPATH%
 	FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do del /q /f /s "%%G"
-	rem FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do rmdir /s /q "%%G"
+	FOR /D /r %%G in (RecycleBin*.ffs_tmp) do rmdir /s /q "%%G"
 
 	@echo .
 	@echo Remove ffs_lock and ffs_tmp
@@ -123,7 +123,7 @@ REM 	exit /b
 		%%A:
 		cd %%A:\
 		FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do del /q /f /s "%%G"
-		rem FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do rmdir /s /q "%%G"
+		FOR /D /r %%G in (RecycleBin*.ffs_tmp) do rmdir /s /q "%%G"
 	)
 	exit /b
 
