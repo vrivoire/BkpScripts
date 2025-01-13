@@ -13,8 +13,8 @@ call :Cleanup_ffs
 @echo -------------------------------------------------------------------------
 @echo Nuage
 @echo -------------------------------------------------------------------------
-for %%A in (OneDrive Mega iCloudDrive Documents) do call :PoidsPression %%A
-for %%A in (GoogleDrive OneDrive Mega iCloudDrive) do call :Nuage %%A
+for %%A in (OneDrive Mega Icedrive Documents) do call :PoidsPression %%A
+for %%A in (GoogleDrive OneDrive Mega Icedrive) do call :Nuage %%A
 @echo Fin Nuage ---------------------------------------------------------------
 
 @echo.

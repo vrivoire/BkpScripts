@@ -113,7 +113,7 @@
                 <TimeSpan Type="None">0</TimeSpan>
             </Filter>
         </Pair>
-        <Pair>
+<!--         <Pair>
             <Left>C:\Users\rivoi\iCloudDrive</Left>
             <Right>D:\Vincent\iCloudDrive</Right>
             <Filter>
@@ -128,7 +128,7 @@
                 <SizeMax Unit="None">0</SizeMax>
                 <TimeSpan Type="None">0</TimeSpan>
             </Filter>
-        </Pair>
+        </Pair> -->
     </FolderPairs>
     <Errors Ignore="false" Retry="0" Delay="5"/>
     <PostSyncCommand Condition="Completion"/>

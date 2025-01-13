@@ -2,13 +2,6 @@
 echo ---------------- Executing %1-SyncSettings.ffs_batch -----------------
 "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\%1-SyncSettings.ffs_batch"
 call :error
-REM for %%A in (E H) do (
-	REM @echo %%A:
-	REM %%A:
-	REM cd %%A:\
-	REM FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do del /q /f /s "%%G"
-	REM FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do rmdir /s /q "%%G"
-REM )
 
 exit
 
@@ -30,5 +23,4 @@ exit
 			pause
 		)		
 	)
-	rem goto :eof
 	exit /b
