@@ -52,10 +52,10 @@
                 <TimeSpan Type="None">0</TimeSpan>
             </Filter>
         </Pair>
-        <Pair>
+<!--         <Pair>
             <Left>C:\Users\rivoi\AppData\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState</Left>
             <Right>D:\Vincent\MSFS2020</Right>
-        </Pair>
+        </Pair> -->
         <Pair>
             <Left>C:\Users\rivoi\Livres</Left>
             <Right>D:\Vincent\Livres</Right>
@@ -64,7 +64,7 @@
             <Left>C:\Users\rivoi\Pictures</Left>
             <Right>D:\Vincent\Pictures</Right>
         </Pair>
-        <Pair>
+<!--         <Pair>
             <Left>C:\Users\rivoi\GoogleDrive</Left>
             <Right>D:\Vincent\GoogleDrive</Right>
             <Filter>
@@ -113,9 +113,9 @@
                 <TimeSpan Type="None">0</TimeSpan>
             </Filter>
         </Pair>
-<!--         <Pair>
-            <Left>C:\Users\rivoi\iCloudDrive</Left>
-            <Right>D:\Vincent\iCloudDrive</Right>
+		<Pair>
+            <Left>C:\Users\rivoi\Icedrive</Left>
+            <Right>D:\Vincent\Icedrive</Right>
             <Filter>
                 <Include>
                     <Item>*</Item>

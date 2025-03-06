@@ -73,10 +73,6 @@
 				<TimeSpan Type="None">0</TimeSpan>
 			</Filter>
 		</Pair>
-<!-- 		<Pair>
-			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Jobs</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Jobs</Right>
-		</Pair> -->
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\302-4240 Chambly</Right>
