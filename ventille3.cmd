@@ -4,10 +4,18 @@
 @echo HOMEDRIVE   %HOMEDRIVE%
 @echo HOMEPATH    %HOMEPATH%
 @echo USERDOMAIN  %USERDOMAIN%
+@echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
 @echo .
 
-call :Cleanup_ffs
+rem call :Cleanup_ffs
+
+@echo.
+@echo -------------------------------------------------------------------------
+@echo Videos
+@echo -------------------------------------------------------------------------
+for %%A in (E F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A
+@echo Fin Videos --------------------------------------------------------------
 
 @echo.
 @echo -------------------------------------------------------------------------
@@ -21,23 +29,16 @@ for %%A in (GoogleDrive OneDrive Mega Icedrive) do call :Nuage %%A
 @echo -------------------------------------------------------------------------
 @echo usb_key
 @echo -------------------------------------------------------------------------
-for %%A in (F:) do call :usb_key %%A
+for %%A in (H:) do call :usb_key %%A
 @echo Fin usb_key -------------------------------------------------------------
 
 @echo.
 @echo -------------------------------------------------------------------------
-@echo Calling ffs_batch
+@echo Documents
 @echo -------------------------------------------------------------------------
-for %%A in (1 4) do call :bkp1 %%A
-for %%A in (D I) do (
-	@echo %%A:
-	%%A:
-	cd %%A:\
-	FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do del /q /f /s "%%G"
-	FOR /D /r %%G in (RecycleBin*.ffs_tmp) do rmdir /s /q "%%G"
-)
+for %%A in (F K) do call :bkp1 %%A
+@echo Fin Documents -----------------------------------------------------------
 
-for %%A in (2 3) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A
 
 @echo.
 @echo Fin ffs_batch -----------------------------------------------------------
@@ -52,7 +53,6 @@ exit
 :Nuage
 	@echo Documents vers %1 ---------------------------------------------------	
 	set TAG=%1
-
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
 	call :error
 	exit /b
@@ -73,8 +73,9 @@ exit
 
 
 :bkp1
-	echo ---------------- Executing %1-SyncSettings.ffs_batch -----------------
-	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\\Documents\BkpScripts\%1-SyncSettings.ffs_batch"
+	echo ---------------- Executing Documents to drive %1 -----------------
+	set DEST_DRIVE=%1
+	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Documents.ffs_batch"
 	call :error
 	exit /b
 
@@ -117,7 +118,7 @@ REM 	exit /b
 
 	@echo .
 	@echo Remove ffs_lock and ffs_tmp
-	for %%A in (D E F H I) do (
+	for %%A in (E F G I) do (
 		@echo %%A:
 		%%A:
 		cd %%A:\

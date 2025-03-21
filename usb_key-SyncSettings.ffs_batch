@@ -22,6 +22,9 @@
 			<Item>\RECYCLED\</Item>
 			<Item>*\desktop.ini</Item>
 			<Item>*\thumbs.db</Item>
+            <Item>*Notes Google Play Livres*</Item>
+            <Item>*.gsheet</Item>
+            <Item>*.gdoc</Item>			
 			<Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
@@ -31,7 +34,7 @@
 	<FolderPairs>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%</Right>
+			<Right>%USB_DRIVE%\%USERNAME%</Right>
 			<Filter>
 				<Include>
 					<Item>*</Item>
@@ -54,54 +57,54 @@
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\zip</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\zip</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\zip</Right>
 		</Pair>
 <!-- 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Jobs</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Jobs</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Jobs</Right>
 		</Pair> -->
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\302-4240 Chambly</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\302-4240 Chambly</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Factures</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Factures</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Factures</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\CV_Vincent</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\CV_Vincent</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\CV_Vincent</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Scotia</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Scotia</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Scotia</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\BkpScripts</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\BkpScripts</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Impôts</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Impôts</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Impôts</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Voiture</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Voiture</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Voiture</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Parents</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Parents</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Parents</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Santé</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\Santé</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\Santé</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\PoidsPression</Left>
-			<Right>%USB_DRIVE%\%USERDOMAIN%\PoidsPression</Right>
+			<Right>%USB_DRIVE%\%USERNAME%\PoidsPression</Right>
 		</Pair>
 		<Pair>
-			<Left>G:\My Drive</Left>
+			<Left>G:\Mon disque</Left>
 			<Right>%USB_DRIVE%</Right>
 			<Filter>
 				<Include>
@@ -127,7 +130,7 @@
 			</Filter>
 		</Pair>
 		<Pair>
-			<Left>G:\My Drive\PoidsPression</Left>
+			<Left>G:\Mon disque\PoidsPression</Left>
 			<Right>%USB_DRIVE%\PoidsPression</Right>
 			<Filter>
 				<Include>

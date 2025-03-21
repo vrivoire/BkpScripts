@@ -32,7 +32,7 @@
 	</Filter>
 	<FolderPairs>
 		<Pair>
-			<Left>G:\My Drive\PoidsPression</Left>
+			<Left>G:\Mon disque\PoidsPression</Left>
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression</Right>
 			<Filter>
 				<Include>
@@ -55,7 +55,7 @@
 			</Filter>
 		</Pair>
 	</FolderPairs>
-    <Errors Ignore="false" Retry="0" Delay="5"/>
+    <Errors Ignore="true" Retry="0" Delay="5"/>
     <PostSyncCommand Condition="Completion"/>
     <LogFolder/>
     <EmailNotification Condition="Always"/>
@@ -65,4 +65,5 @@
         <ErrorDialog>Show</ErrorDialog>
         <PostSyncAction>None</PostSyncAction>
     </Batch>
+	
 </FreeFileSync>

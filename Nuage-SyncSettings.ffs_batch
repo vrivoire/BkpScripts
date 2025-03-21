@@ -26,6 +26,12 @@
 			<Item>*\.dropbox.cache</Item>
 			<Item>*\Rubbish*</Item>
 			<Item>*\RecycleBin*</Item>
+            <Item>*Notes Google Play Livres*</Item>
+            <Item>*.gsheet</Item>
+            <Item>*.gdoc</Item>
+            <Item>*.ffs_tmp</Item>
+            <Item>desktop.ini</Item>
+            <Item>*.!qB</Item>			
 			<Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
@@ -35,7 +41,7 @@
 	<FolderPairs>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%</Right>
 			<Filter>
 				<Include>
 					<Item>*</Item>
@@ -60,7 +66,7 @@
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\zip</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\zip</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\zip</Right>
 			<Filter>
 				<Include>
 					<Item>*</Item>
@@ -75,42 +81,42 @@
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\302-4240 Chambly</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\302-4240 Chambly</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Factures</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Factures</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Factures</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\CV_Vincent</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\CV_Vincent</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\CV_Vincent</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Scotia</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Scotia</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Scotia</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\BkpScripts</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\BkpScripts</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Impôts</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Impôts</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Impôts</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Voiture</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Voiture</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Voiture</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Parents</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Parents</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Parents</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Santé</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERDOMAIN%\Santé</Right>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Santé</Right>
 		</Pair>
 		<Pair>
-			<Left>G:\My Drive</Left>
+			<Left>G:\Mon disque</Left>
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%</Right>
 			<Filter>
 				<Include>
@@ -136,7 +142,7 @@
 			</Filter>
 		</Pair>
 	</FolderPairs>
-	<Errors Ignore="false" Retry="0" Delay="5"/>
+	<Errors Ignore="true" Retry="0" Delay="5"/>
 	<PostSyncCommand Condition="Completion"/>
 	<LogFolder/>
 	<EmailNotification Condition="Always"/>

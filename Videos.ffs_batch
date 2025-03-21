@@ -23,6 +23,7 @@
 			<Item>*\desktop.ini</Item>
 			<Item>*\thumbs.db</Item>
 			<Item>*\RecycleBin*</Item>
+			<Item>*.!qB</Item>
 			<Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
@@ -31,12 +32,8 @@
 	</Filter>
 	<FolderPairs>
 		<Pair>
-			<Left>D:\Vincent</Left>
-			<Right>E:\Vincent</Right>
-		</Pair>
-		<Pair>
-			<Left>I:\Films</Left>
-			<Right>E:\Films</Right>
+			<Left>C:\Users\ADELE\Videos</Left>
+			<Right>%DEST_DRIVE%:\Films</Right>
 		</Pair>
 	</FolderPairs>
 	<Errors Ignore="false" Retry="0" Delay="5"/>

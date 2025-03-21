@@ -37,9 +37,9 @@ del /F /S /Q *.torrent
 cd %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\uTorrent
 del /F /S /Q *.torrent
 
-@echo ImdbSearch ---------------------------------------------------
-cd "%HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects\ImdbSearch\bin"
-del /F /S /Q *.log
+REM @echo ImdbSearch ---------------------------------------------------
+REM cd "%HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects\ImdbSearch\bin"
+REM del /F /S /Q *.log
 
 @echo FreeFileSync ---------------------------------------------------
 cd %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\FreeFileSync\Logs

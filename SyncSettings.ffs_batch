@@ -38,8 +38,8 @@
     </Filter>
     <FolderPairs>
         <Pair>
-            <Left>D:\Films</Left>
-            <Right>I:\Films</Right>
+            <Left>E:\Films</Left>
+            <Right>F:\Films</Right>
             <Compare>
                 <Variant>TimeAndSize</Variant>
                 <Symlinks>Exclude</Symlinks>
@@ -87,8 +87,8 @@
             </Filter>
         </Pair>
         <Pair>
-            <Left>C:\Users\rivoi\GoogleDrive\PoidsPression</Left>
-            <Right>C:\Users\rivoi\Documents\PoidsPression</Right>
+            <Left>C:\Users\ADELE\GoogleDrive\PoidsPression</Left>
+            <Right>C:\Users\ADELE\Documents\PoidsPression</Right>
             <Compare>
                 <Variant>TimeAndSize</Variant>
                 <Symlinks>Exclude</Symlinks>
@@ -202,8 +202,8 @@
             </Synchronize>
         </Pair>
         <Pair>
-            <Left>C:\Users\rivoi\GoogleDrive</Left>
-            <Right>C:\Users\rivoi\OneDrive</Right>
+            <Left>C:\Users\ADELE\GoogleDrive</Left>
+            <Right>C:\Users\ADELE\OneDrive</Right>
             <Compare>
                 <Variant>TimeAndSize</Variant>
                 <Symlinks>Follow</Symlinks>
@@ -216,8 +216,8 @@
             </Synchronize>
         </Pair>
         <Pair>
-            <Left>C:\Users\rivoi\Documents</Left>
-            <Right>I:\Vincent\Documents</Right>
+            <Left>C:\Users\ADELE\Documents</Left>
+            <Right>F:\Vincent\Documents</Right>
             <Compare>
                 <Variant>TimeAndSize</Variant>
                 <Symlinks>Exclude</Symlinks>
