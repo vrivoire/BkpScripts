@@ -104,7 +104,7 @@
 			<Right>%USB_DRIVE%\%USERNAME%\PoidsPression</Right>
 		</Pair>
 		<Pair>
-			<Left>G:\Mon disque</Left>
+			<Left>H:\Mon disque</Left>
 			<Right>%USB_DRIVE%</Right>
 			<Filter>
 				<Include>
@@ -130,7 +130,7 @@
 			</Filter>
 		</Pair>
 		<Pair>
-			<Left>G:\Mon disque\PoidsPression</Left>
+			<Left>H:\Mon disque\PoidsPression</Left>
 			<Right>%USB_DRIVE%\PoidsPression</Right>
 			<Filter>
 				<Include>

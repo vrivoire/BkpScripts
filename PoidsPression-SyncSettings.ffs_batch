@@ -32,7 +32,7 @@
 	</Filter>
 	<FolderPairs>
 		<Pair>
-			<Left>G:\Mon disque\PoidsPression</Left>
+			<Left>H:\Mon disque\PoidsPression</Left>
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression</Right>
 			<Filter>
 				<Include>

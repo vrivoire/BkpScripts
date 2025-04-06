@@ -1,9 +1,8 @@
 @echo off
-echo ---------------- Executing Videos to drive %1 -----------------
+echo ---------------- Executing %2 to drive %1 -----------------
 set DEST_DRIVE=%1
-"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Videos.ffs_batch"
+"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\%2.ffs_batch"
 call :error
-
 exit
 
 

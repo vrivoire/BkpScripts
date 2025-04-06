@@ -14,8 +14,15 @@ rem call :Cleanup_ffs
 @echo -------------------------------------------------------------------------
 @echo Videos
 @echo -------------------------------------------------------------------------
-for %%A in (E F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A
+for %%A in (E F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A Videos
 @echo Fin Videos --------------------------------------------------------------
+
+@echo.
+@echo -------------------------------------------------------------------------
+@echo Documents
+@echo -------------------------------------------------------------------------
+for %%A in (F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A Documents
+@echo Fin Documents -----------------------------------------------------------
 
 @echo.
 @echo -------------------------------------------------------------------------
@@ -29,16 +36,8 @@ for %%A in (GoogleDrive OneDrive Mega Icedrive) do call :Nuage %%A
 @echo -------------------------------------------------------------------------
 @echo usb_key
 @echo -------------------------------------------------------------------------
-for %%A in (H:) do call :usb_key %%A
+for %%A in (G:) do call :usb_key %%A
 @echo Fin usb_key -------------------------------------------------------------
-
-@echo.
-@echo -------------------------------------------------------------------------
-@echo Documents
-@echo -------------------------------------------------------------------------
-for %%A in (F K) do call :bkp1 %%A
-@echo Fin Documents -----------------------------------------------------------
-
 
 @echo.
 @echo Fin ffs_batch -----------------------------------------------------------
@@ -72,12 +71,12 @@ exit
 	exit /b
 
 
-:bkp1
-	echo ---------------- Executing Documents to drive %1 -----------------
-	set DEST_DRIVE=%1
-	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Documents.ffs_batch"
-	call :error
-	exit /b
+REM :bkp1
+	REM echo ---------------- Executing Documents to drive %1 -----------------
+	REM set DEST_DRIVE=%1
+	REM "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Documents.ffs_batch"
+	REM call :error
+	REM exit /b
 
 REM :bkp2
 REM 	echo ---------------- Executing %1-SyncSettings.ffs_batch -----------------
