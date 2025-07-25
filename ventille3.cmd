@@ -46,7 +46,7 @@ rem call :Cleanup_ffs
 
 @echo Ventille 3 - Done!
 @echo %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\FreeFileSync\Logs
-pause
+rem pause
 exit
 
 :Nuage

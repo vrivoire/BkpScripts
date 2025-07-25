@@ -115,7 +115,7 @@ call netsh winsock reset
 @echo .
 FOR %%A IN ($MFT $LogFile $Volume $AttrDef $Bitmap $Boot $BadClus $Secure $UpCase $Extend) DO CALL :CONTIG %%A
 
-rem pause
+
 exit
 
 :CONTIG
