@@ -24,7 +24,7 @@
 			<Item>*\thumbs.db</Item>
 			<Item>*\RecycleBin*</Item>
 			<Item>.*</Item>
-			<Item>*\</Item>
+			<!-- <Item>*\</Item> -->
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
 		<SizeMax Unit="None">0</SizeMax>
@@ -47,7 +47,7 @@
 					<Item>*\thumbs.db</Item>
 					<Item>*\RecycleBin*</Item>
 					<Item>.*</Item>
-					<Item>*\</Item>
+					<!-- <Item>*\</Item> -->
 				</Exclude>
 				<SizeMin Unit="None">0</SizeMin>
 				<SizeMax Unit="None">0</SizeMax>
