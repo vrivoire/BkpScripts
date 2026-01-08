@@ -28,8 +28,10 @@ for %%A in (F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts
 @echo -------------------------------------------------------------------------
 @echo Nuage
 @echo -------------------------------------------------------------------------
-for %%A in (OneDrive Mega Icedrive Documents) do call :PoidsPression %%A
+rem for %%A in (OneDrive Mega Icedrive Documents) do call :PoidsPression %%A
+start PoidsPression.cmd
 for %%A in (GoogleDrive OneDrive Mega Icedrive) do call :Nuage %%A
+rem pause
 @echo Fin Nuage ---------------------------------------------------------------
 
 @echo.
@@ -56,12 +58,12 @@ exit
 	call :error
 	exit /b
 
-:PoidsPression
-	@echo PoidsPression vers %1 ---------------------------------------------------	
-	set TAG=%1
-	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\PoidsPression-SyncSettings.ffs_batch"
-	call :error
-	exit /b
+REM :PoidsPression
+	REM @echo PoidsPression vers %1 ---------------------------------------------------	
+	REM set TAG=%1
+	REM "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\PoidsPression-SyncSettings.ffs_batch"
+	REM call :error
+	REM exit /b
 
 :usb_key
 	@echo USB Key in %1 -------------------------------------------------------
