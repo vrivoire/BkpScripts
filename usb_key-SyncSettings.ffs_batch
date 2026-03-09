@@ -59,10 +59,10 @@
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\zip</Left>
 			<Right>%USB_DRIVE%\%USERNAME%\zip</Right>
 		</Pair>
-<!-- 		<Pair>
-			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Jobs</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Jobs</Right>
-		</Pair> -->
+ 		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Thermopompe</Left>
+			<Right>%USB_DRIVE%\%USERNAME%\Thermopompe</Right>
+		</Pair> 
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
 			<Right>%USB_DRIVE%\%USERNAME%\302-4240 Chambly</Right>

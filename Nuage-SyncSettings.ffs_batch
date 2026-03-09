@@ -80,6 +80,10 @@
 			</Filter>
 		</Pair>
 		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Thermopompe</Left>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Thermopompe</Right>
+		</Pair>
+		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\302-4240 Chambly</Right>
 		</Pair>
