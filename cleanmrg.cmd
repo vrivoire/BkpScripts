@@ -2,19 +2,19 @@
 
 @Echo Off & Cls
 
-net sess>nul 2>&1||(powershell start cmd -ArgumentList """/c %~0""" -verb Runas & exit)
+(Net session >nul 2>&1)||(PowerShell start """%~0""" -verb RunAs & Exit /B)
 
 Call :IsAdmin
 
 Mode CON LINES=5 COLS=50 & Color 0E
 
-Echo                   PLEASE WAIT... 
+Echo                   PLEASE WAIT...
 
 :: This command deletes the oldest shadow copy on drive C
 vssadmin delete shadows /for=c: /oldest 2>&1 >nul
 
-::Creating System Restore point 
-Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Before Deleting Temp Files", 100, 12 
+::Creating System Restore point
+Wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Before Deleting Temp Files", 100, 12
 
 
 ::    CLEANUP STAGE
@@ -75,7 +75,6 @@ Reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\Wi
 Cls & Mode CON  LINES=10 COLS=50 & Color 1E & Title Created by FREEBOOTER
 Echo.
 Echo.
-Echo. 
 Echo.
 Echo.
 Echo.
@@ -84,40 +83,41 @@ Echo.
 Echo.
 Echo.
 Echo.
-Echo. 
 Echo.
 Echo.
 Echo.
-Echo           ษออออออออออออออออออออออออออป 
-Echo           บ DELETING TEMPORARY FILES บ  
+Echo.
+Echo.
+Echo           ษออออออออออออออออออออออออออป
+Echo           บ DELETING TEMPORARY FILES บ 
 Echo           ศออออออออออออออออออออออออออผ
 Echo.
 
-CLEANMGR /sagerun:64 
+CLEANMGR /sagerun:64
 
 
 
 Cls
 :: Clear Temporary Folder.
-Cd %TMP% 
+Cd %TMP%
 For /f "tokens=*" %%a in ('Dir /b %LOCALAPPDATA%\Temp') do (
-Echo Y | Rd /s /q "%%a" 2>NUL 1>NUL 
-If Exist "%%a" Echo Y | Del /a /f "%%a" 2>NUL 1>NUL 
+Echo Y | Rd /s /q "%%a" 2>NUL 1>NUL
+If Exist "%%a" Echo Y | Del /a /f "%%a" 2>NUL 1>NUL
 )
-Echo. 
 Echo.
 Echo.
 Echo.
-Echo. 
 Echo.
 Echo.
 Echo.
-Echo. 
 Echo.
 Echo.
 Echo.
-Echo. 
-Echo        FINNISH DELETING TEMPORARY FILES 
+Echo.
+Echo.
+Echo.
+Echo.
+Echo        FINNISH DELETING TEMPORARY FILES
 Echo.
 Echo.
 ping -n 5 localhost >Nul
@@ -129,23 +129,13 @@ Del /a /f /q "%SystemRoot%\Prefetch\*"
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Cls & Mode CON  LINES=12 COLS=80 & Color 1E & Title Created by FREEBOOTER
 
 Cd  %SystemRoot%\System32
 
 Net Start TrustedInstaller 2>NUL 1>NUL
+
+
 
 Reg QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName | find /i "Windows 8" >Nul
 If Not Errorlevel 1 (
@@ -158,9 +148,12 @@ Dism /Online /Cleanup-Image /StartComponentCleanup /ResetBase
 Reg QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName | find /i "Windows 10" >Nul
 If Not Errorlevel 1 (
 Dism /Online /Cleanup-Image /StartComponentCleanup /ResetBase
-) Else (	
+) Else (
+Reg QUERY "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName | find /i "Windows 11" >Nul
+If Not Errorlevel 1 (
+Dism /Online /Cleanup-Image /StartComponentCleanup /ResetBase   
 Goto :Event_Log
-) ) )  
+) ) ) )
 
 Ping -n 4 localhost >Nul
 
@@ -174,8 +167,8 @@ Reg query "HKU\S-1-5-19\Environment"
 If Not %ERRORLEVEL% EQU 0 (
  Cls & Mode CON  LINES=5 COLS=48 & Color 0C & Title - WARNING -
  Echo.
- Echo. 
- Echo  YOU MUST HAVE ADMINISTRATOR RIGHTS TO CONTINUE 
+ Echo.
+ Echo  YOU MUST HAVE ADMINISTRATOR RIGHTS TO CONTINUE
  Pause >Nul & Exit
 )
 Cls
