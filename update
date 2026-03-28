@@ -1,13 +1,15 @@
 #!/bin/sh
 
-sudo apt update && sudo apt upgrade -y && sudo do-release-upgrade && sudo apt-get --with-new-pkgs upgrade
-
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo do-release-upgrade && sudo apt-get --with-new-pkgs upgrade
 sudo apt autoremove
 
 lsb_release -a
 
-do-release-upgrade
+sudo do-release-upgrade
 
 sudo aptitude safe-upgrade
 
 lsb_release -d
+
+
+# wsl.exe -d Ubuntu-26.04

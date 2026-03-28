@@ -52,7 +52,7 @@ rem pause
 exit
 
 :Nuage
-	@echo Documents vers %1 ---------------------------------------------------	
+	@echo :Nuage : Documents vers %1 ---------------------------------------------------	
 	set TAG=%1
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
 	call :error

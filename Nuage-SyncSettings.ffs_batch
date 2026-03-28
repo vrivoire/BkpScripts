@@ -120,7 +120,7 @@
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Santé</Right>
 		</Pair>
 		<Pair>
-			<Left>H:\Mon disque</Left>
+			<Left>D:\Mon disque</Left>
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%</Right>
 			<Filter>
 				<Include>

@@ -1,5 +1,6 @@
 @echo off
 
+@echo PoidsPression.cmd
 for %%A in (OneDrive Mega Icedrive Documents) do call :PoidsPression %%A
 
 rem pause
