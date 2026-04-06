@@ -5,7 +5,6 @@ set DEST_DRIVE=%1
 call :error
 exit
 
-
 :error
 	if not %errorlevel% == 0 (
 		echo DEST_DRIVE=%DEST_DRIVE%

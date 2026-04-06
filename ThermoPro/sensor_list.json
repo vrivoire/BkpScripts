@@ -17,7 +17,9 @@
       "-Y",
       "classic",
       "-s",
-      "250k"
+      "250k",
+      "-M",
+      "level"
     ],
     "sensors": {
       "ThermoPro-TX7B": "int",
@@ -34,7 +36,9 @@
       "-R",
       "11",
       "-R",
-      "162"
+      "162",
+      "-M",
+      "level"
     ],
     "sensors": {
       "Acurite-609TXC": "int",

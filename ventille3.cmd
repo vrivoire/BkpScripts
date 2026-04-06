@@ -12,6 +12,13 @@ rem call :Cleanup_ffs
 
 @echo.
 @echo -------------------------------------------------------------------------
+@echo Programs
+@echo -------------------------------------------------------------------------
+start "Programs" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" A Programs
+@echo Fin Programs -----------------------------------------------------------
+@echo.
+
+@echo -------------------------------------------------------------------------
 @echo Videos
 @echo -------------------------------------------------------------------------
 for %%A in (E F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A Videos
