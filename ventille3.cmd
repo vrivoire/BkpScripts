@@ -8,7 +8,24 @@
 @echo AppData     %AppData%
 @echo .
 
-rem call :Cleanup_ffs
+@echo.
+@echo -------------------------------------------------------------------------
+@echo PoidsPression
+@echo -------------------------------------------------------------------------
+start PoidsPression.cmd
+@echo Fin PoidsPression ---------------------------------------------------------------
+
+@echo.
+@echo -------------------------------------------------------------------------
+@echo Nuage
+@echo -------------------------------------------------------------------------
+for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
+	set TAG=%%~G
+	@echo PoidsPression vers %TAG% . %%~G ---------------------------------------------------	
+	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
+	call :error
+)
+@echo Fin Nuage ---------------------------------------------------------------
 
 @echo.
 @echo -------------------------------------------------------------------------
@@ -33,19 +50,14 @@ for %%A in (F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts
 
 @echo.
 @echo -------------------------------------------------------------------------
-@echo Nuage
-@echo -------------------------------------------------------------------------
-rem for %%A in (OneDrive Mega Icedrive Documents) do call :PoidsPression %%A
-start PoidsPression.cmd
-for %%A in (GoogleDrive OneDrive Mega Icedrive) do call :Nuage %%A
-rem pause
-@echo Fin Nuage ---------------------------------------------------------------
-
-@echo.
-@echo -------------------------------------------------------------------------
 @echo usb_key
 @echo -------------------------------------------------------------------------
-for %%A in (G:) do call :usb_key %%A
+for %%A in (G:) do (
+	@echo USB Key in %%A -------------------------------------------------------
+	set USB_DRIVE=%%A
+	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\usb_key-SyncSettings.ffs_batch"
+	call :error	
+)
 @echo Fin usb_key -------------------------------------------------------------
 
 @echo.
@@ -58,20 +70,6 @@ rem call :Cleanup_ffs
 rem pause
 exit
 
-:Nuage
-	@echo :Nuage : Documents vers %1 ---------------------------------------------------	
-	set TAG=%1
-	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
-	call :error
-	exit /b
-
-REM :PoidsPression
-	REM @echo PoidsPression vers %1 ---------------------------------------------------	
-	REM set TAG=%1
-	REM "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\PoidsPression-SyncSettings.ffs_batch"
-	REM call :error
-	REM exit /b
-
 :usb_key
 	@echo USB Key in %1 -------------------------------------------------------
 	set USB_DRIVE=%1
@@ -79,19 +77,6 @@ REM :PoidsPression
 	call :error
 	exit /b
 
-
-REM :bkp1
-	REM echo ---------------- Executing Documents to drive %1 -----------------
-	REM set DEST_DRIVE=%1
-	REM "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Documents.ffs_batch"
-	REM call :error
-	REM exit /b
-
-REM :bkp2
-REM 	echo ---------------- Executing %1-SyncSettings.ffs_batch -----------------
-REM 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\\Documents\BkpScripts\%1-SyncSettings.ffs_batch"
-REM 	call :error
-REM 	exit /b
 
 :error
 	if not %errorlevel% == 0 (

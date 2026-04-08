@@ -120,8 +120,8 @@
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Santé</Right>
 		</Pair>
 		<Pair>
-			<Left>D:\Mon disque</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%</Right>
+			<Left>C:\Users\ADELE\Documents\PoidsPression</Left>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression</Right>
 			<Filter>
 				<Include>
 					<Item>*</Item>

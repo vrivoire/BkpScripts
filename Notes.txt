@@ -1,0 +1,147 @@
+
+Kaboom123.,
+
+L8LMQS184031
+Hilo	rivoire.vincent@gmail.com / Elcv753.,
+
+WiFi: BELL698 / A36D2669
+
+C:\Windows\System32\drivers\etc
+
+Desjardins assurances:
+	Code utilisateur: vrivoire
+	MP: Mlvelc852.
+	WQMC9NWXGBQ3E1JF2K4WFA1Z
+	Contrat No: EMP1234E / emp1234e / Emp1234e
+	Numéro de certificat :054273081
+MarEmp1234e
+53526541te
+
+Votre numéro de transmission est : 973d3404.
+Votre numéro de transmission est : DE0C76C1.
+
+https://maboitesecurisee.desjardins.com/
+MP: Mlvelc852./9
+mLvelc456?
+
+H1X3J7
+
+Alt R
+
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+
+Au cœur du port						26/03
+
+The Gray House						15/04
+The Pitt							16/04
+Le retour d'Anna Brodeur			25/04
+
+Elsbeth 14-20						22/05
+Ghosts US  14-22					22/05
+
+Marshals							24/05
+For All Mankind 5					29/05
+
+3 Body Problem						2026
+For All Mankind						2026
+
+Small Prophets
+horizon an american saga			11
+
+Scavengers Reign					10/2024
+
+
+Blue Eye Samurai
+
+Slow Horses 						S05
+IXE-13 et la course à l'uranium
+The Fortress
+Neuromancer
+For All Mankind
+
+AMÉLIE ET LA MÉTAPHYSIQUE DES TUBES
+
+Retraite Québec
+Votre numéro de transmission est : 3f6689d5.
+Votre numéro de transmission est : 973d3404.
+Votre numéro de transmission est : DE0C76C1.
+
+-----------------------------------------------------------------------
+Linux Ubuntu 24.04.1 LTS
+vrivoire / Mlvelc123
+-----------------------------------------------------------------------
+
+74-12-B3-BD-06-AB
+
+20:0D:B0:A0:A0:02
+Adresse IP :192.168.10.101
+Début 192.168.10.10
+Fin 192.168.10.254
+
+22:0D:B0:00:A0:00
+Adresse IP : 192.168.10.49
+Début 192.168.10.10
+Fin 192.168.10.254
+
+
+------------------------------- ToDo ImsbSearch -----------------------
+SUPPORTED_EXTENSIONS / SUPPORTED_EXTENSIONS_SHORT
+bulle info
+
+NB notification
+-----------------------------------------------------------------------
+
+SDC rue de 4240 Chambly
+
+-----------------------------------------------------------------------
+
+
+
+pip-review --interactive
+
+
+
+
+set OPENAI_API_KEY=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
+python -m venv venv
+venv\Scripts\activate.bat
+pip install -r requirements.txt
+
+https://takeout.google.com/
+
+
+cd C:\Users\rivoi\Documents\NetBeansProjects\PycharmProjects\cookbook
+set OPENAI_API_KEY=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
+
+openai tools fine_tunes.prepare_data -f data/sport3.jsonl -q
+
+openai api fine_tunes.create -t "data/sport3_prepared_train.jsonl" -v "data/sport3_prepared_valid.jsonl" --compute_classification_metrics --classification_positive_class " baseball"
+
+openai api fine_tunes.follow -i ft-k4CnpRCvZPb7fa3p37alAi87
+
+openai api fine_tunes.list
+
+openai api completions.create -m curie:ft-personal-2023-08-02-22-12-46 -p <YOUR_PROMPT>
+
+openai api fine_tunes.results -i ft-k4CnpRCvZPb7fa3p37alAi87 > data/result.csv
+
+
+pyinstaller --onefile Pression2.py  --icon=C:\Users\rivoi\Documents\NetBeansProjects\Pression\src\main\resources\pression.ico --nowindowed --noconsole
+
+
+
+pip freeze > to-uninstall.txt
+pip uninstall -y -r  to-uninstall.txt
+
+
+
+pipenv uninstall --all
+
+-----------------------------
+
+cd C:\Users\ADELE\Documents\NetBeansProjects\PycharmProjects\......
+python -m venv .venv
+.venv\Scripts\activate.bat
+pip install -r requirements.txt
+

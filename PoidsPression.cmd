@@ -1,18 +1,15 @@
 @echo off
 
 @echo PoidsPression.cmd
-for %%A in (OneDrive Mega Icedrive Documents) do call :PoidsPression %%A
-
-rem pause
-exit
-
-:PoidsPression
-	@echo PoidsPression vers %1 ---------------------------------------------------	
-	set TAG=%1
+FOR %%G IN ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
+	set TAG=%%~G
+	@echo PoidsPression vers %TAG% . %%~G ---------------------------------------------------	
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\PoidsPression-SyncSettings.ffs_batch"
 	call :error
-	exit /b
-	
+)
+exit
+
+
 :error
 	if not %errorlevel% == 0 (
 		echo errorlevel=%errorlevel%
