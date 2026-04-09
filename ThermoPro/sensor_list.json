@@ -22,7 +22,7 @@
       "level"
     ],
     "sensors": {
-      "ThermoPro-TX7B": "int",
+      "ThermoPro-TX7B": "ext",
       "AmbientWeather-WH31B": "ext"
     }
   },
