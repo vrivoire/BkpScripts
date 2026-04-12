@@ -25,6 +25,9 @@ for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
 	call :error
 )
+robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\OneDrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
+robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Mega /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
+robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Icedrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
 @echo Fin Nuage ---------------------------------------------------------------
 
 @echo.

@@ -24,7 +24,8 @@
 			<Item>*\thumbs.db</Item>
             <Item>*Notes Google Play Livres*</Item>
             <Item>*.gsheet</Item>
-            <Item>*.gdoc</Item>			
+            <Item>*.gdoc</Item>		
+			<Item>*\rtl_433.json</Item>			
 			<Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>

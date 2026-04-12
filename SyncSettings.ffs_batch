@@ -30,6 +30,7 @@
             <Item>*.gdoc</Item>
             <Item>*.ffs_tmp</Item>
             <Item>desktop.ini</Item>
+			<Item>*\rtl_433.json</Item>
             <Item>*.!qB</Item>
         </Exclude>
         <SizeMin Unit="None">0</SizeMin>

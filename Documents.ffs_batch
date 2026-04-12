@@ -22,6 +22,7 @@
             <Item>\RECYCLED\</Item>
             <Item>*\desktop.ini</Item>
             <Item>*\thumbs.db</Item>
+			<Item>*\rtl_433.json</Item>
             <Item>*\RecycleBin*</Item>
             <Item>.*</Item>
         </Exclude>

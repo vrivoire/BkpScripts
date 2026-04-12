@@ -23,6 +23,7 @@
 			<Item>*\desktop.ini</Item>
 			<Item>*\thumbs.db</Item>
 			<Item>*\RecycleBin*</Item>
+			<Item>*\rtl_433.json</Item>
 			<Item>*.!qB</Item>
 			<Item>.*</Item>
 		</Exclude>
