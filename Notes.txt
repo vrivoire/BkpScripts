@@ -32,9 +32,6 @@ Alt R
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 
-Au cœur du port						26/03
-
-The Gray House						15/04
 The Pitt							16/04
 Le retour d'Anna Brodeur			25/04
 
@@ -140,7 +137,9 @@ pip uninstall -y -r  to-uninstall.txt
 
 
 
-pipenv uninstall --all
+pip uninstall -r C:\Users\ADELE\Documents\NetBeansProjects\PycharmProjects\requirements.txt -y
+pip cache purge
+pip install -r C:\Users\ADELE\Documents\NetBeansProjects\PycharmProjects\requirements.txt
 
 -----------------------------
 
