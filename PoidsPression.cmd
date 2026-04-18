@@ -7,6 +7,11 @@ FOR %%G IN ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\PoidsPression-SyncSettings.ffs_batch"
 	call :error
 )
+echo:
+cd "%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression"
+cd
+del /S *.ffs_tmp
+echo --------------------
 exit
 
 

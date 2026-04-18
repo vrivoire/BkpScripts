@@ -1,21 +1,21 @@
 @echo off
-@echo .
+echo:
 @echo Ventille les fichiers ect, bat, ffs_batch et les CVs
 @echo HOMEDRIVE   %HOMEDRIVE%
 @echo HOMEPATH    %HOMEPATH%
 @echo USERDOMAIN  %USERDOMAIN%
 @echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
-@echo .
+echo:
 
-@echo.
+echo:
 @echo -------------------------------------------------------------------------
 @echo PoidsPression
 @echo -------------------------------------------------------------------------
 start PoidsPression.cmd
 @echo Fin PoidsPression ---------------------------------------------------------------
 
-@echo.
+echo:
 @echo -------------------------------------------------------------------------
 @echo Nuage
 @echo -------------------------------------------------------------------------
@@ -25,18 +25,35 @@ for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
 	call :error
 )
-robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\OneDrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
-robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Mega /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
-robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Icedrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
+echo:
+cd "C:\Users\ADELE\GoogleDrive\Mon disque"
+del /S *.ffs_tmp
+echo --------------------
+echo:
+cd C:\Users\ADELE\OneDrive
+call robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\OneDrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
+del /S *.ffs_tmp
+echo --------------------
+echo:
+cd C:\Users\ADELE\Mega
+call robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Mega /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
+del /S *.ffs_tmp
+echo --------------------
+echo:
+cd C:\Users\ADELE\Icedrive
+call robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Icedrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
+del /S *.ffs_tmp
+echo --------------------
+echo:
 @echo Fin Nuage ---------------------------------------------------------------
 
-@echo.
+echo:
 @echo -------------------------------------------------------------------------
 @echo Programs
 @echo -------------------------------------------------------------------------
 start "Programs" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" A Programs
 @echo Fin Programs -----------------------------------------------------------
-@echo.
+echo:
 
 @echo -------------------------------------------------------------------------
 @echo Videos
@@ -44,14 +61,14 @@ start "Programs" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" A Program
 for %%A in (E F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A Videos
 @echo Fin Videos --------------------------------------------------------------
 
-@echo.
+echo:
 @echo -------------------------------------------------------------------------
 @echo Documents
 @echo -------------------------------------------------------------------------
 for %%A in (F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\bkp2.cmd" %%A Documents
 @echo Fin Documents -----------------------------------------------------------
 
-@echo.
+echo:
 @echo -------------------------------------------------------------------------
 @echo usb_key
 @echo -------------------------------------------------------------------------
@@ -63,10 +80,17 @@ for %%A in (G:) do (
 )
 @echo Fin usb_key -------------------------------------------------------------
 
-@echo.
+echo:
 @echo Fin ffs_batch -----------------------------------------------------------
+echo:
 
-rem call :Cleanup_ffs
+for %%A in (E F G K) do (
+	@echo Remove *.ffs_tmp in %%A -------------------------------------------------------
+	%%A:
+	cd
+	rem del /S *.ffs_tmp
+	echo:
+)
 
 @echo Ventille 3 - Done!
 @echo %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\FreeFileSync\Logs
@@ -101,7 +125,7 @@ exit
 	goto :eof
 
 :Cleanup_ffs
-	@echo.
+	echo:
 	@echo -------------------------------------------------------------------------
 	@echo Cleanup sync*.ffs_lock
 	@echo -------------------------------------------------------------------------
@@ -112,7 +136,7 @@ exit
 	FOR /D /r %%G in (*.ffs_tmp *.ffs_lock) do del /q /f /s "%%G"
 	FOR /D /r %%G in (RecycleBin*.ffs_tmp) do rmdir /s /q "%%G"
 
-	@echo .
+	echo:
 	@echo Remove ffs_lock and ffs_tmp
 	for %%A in (E F G I) do (
 		@echo %%A:
