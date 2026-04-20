@@ -1,4 +1,6 @@
 @echo off
+SETLOCAL ENABLEDELAYEDEXPANSION
+
 echo:
 @echo Ventille les fichiers ect, bat, ffs_batch et les CVs
 @echo HOMEDRIVE   %HOMEDRIVE%
@@ -21,30 +23,13 @@ echo:
 @echo -------------------------------------------------------------------------
 for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
 	set TAG=%%~G
-	@echo PoidsPression vers %TAG% . %%~G ---------------------------------------------------	
+	@echo PoidsPression vers !TAG! == %%~G ---------------------------------------------------	
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
 	call :error
+	
+	del /s /q /f "C:\Users\ADELE\!TAG!\*.ffs_tmp"
+	@echo ------
 )
-echo:
-cd "C:\Users\ADELE\GoogleDrive\Mon disque"
-del /S *.ffs_tmp
-echo --------------------
-echo:
-cd C:\Users\ADELE\OneDrive
-call robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\OneDrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
-del /S *.ffs_tmp
-echo --------------------
-echo:
-cd C:\Users\ADELE\Mega
-call robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Mega /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
-del /S *.ffs_tmp
-echo --------------------
-echo:
-cd C:\Users\ADELE\Icedrive
-call robocopy "C:\Users\ADELE\GoogleDrive\Mon disque" C:\Users\ADELE\Icedrive /XF *.gsheet /XF *.gdoc /MIR /LEV:1 /NJH
-del /S *.ffs_tmp
-echo --------------------
-echo:
 @echo Fin Nuage ---------------------------------------------------------------
 
 echo:
@@ -77,20 +62,14 @@ for %%A in (G:) do (
 	set USB_DRIVE=%%A
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\usb_key-SyncSettings.ffs_batch"
 	call :error	
+	del /s /q /f "%USB_DRIVE%\*.ffs_tmp"
+	@echo ------
 )
 @echo Fin usb_key -------------------------------------------------------------
 
 echo:
 @echo Fin ffs_batch -----------------------------------------------------------
 echo:
-
-for %%A in (E F G K) do (
-	@echo Remove *.ffs_tmp in %%A -------------------------------------------------------
-	%%A:
-	cd
-	rem del /S *.ffs_tmp
-	echo:
-)
 
 @echo Ventille 3 - Done!
 @echo %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\FreeFileSync\Logs

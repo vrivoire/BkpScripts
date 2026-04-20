@@ -23,7 +23,18 @@
             <Item>*\desktop.ini</Item>
             <Item>*\thumbs.db</Item>
             <Item>*\RecycleBin*</Item>
-			<Item>*\rtl_433.json</Item>
+			<Item>*Rubbish*</Item>
+			<Item>*RecycleBin*</Item>
+            <Item>*.gsheet</Item>
+            <Item>*.gdoc</Item>
+            <Item>*.ffs_tmp*</Item>
+            <Item>desktop.ini</Item>
+            <Item>*.!qB</Item>		
+			<Item>*rtl_433.json*</Item>			
+            <Item>*Notes Google Play Livres*</Item>
+			<Item>*ImdbSearch.db*</Item>
+			<Item>*rtl_433*</Item>
+			<Item>*Renpho Health-R_PmJP0*</Item>
             <Item>.*</Item>
         </Exclude>
         <SizeMin Unit="None">0</SizeMin>

@@ -31,7 +31,7 @@
             <Item>*.ffs_tmp*</Item>
             <Item>desktop.ini</Item>
             <Item>*.!qB</Item>		
-			<Item>*\rtl_433.json</Item>			
+			<Item>*rtl_433.json*</Item>			
             <Item>*Notes Google Play Livres*</Item>
 			<Item>*ImdbSearch.db*</Item>
 			<Item>*rtl_433*</Item>

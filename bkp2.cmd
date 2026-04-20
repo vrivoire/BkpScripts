@@ -1,8 +1,15 @@
 @echo off
+SETLOCAL ENABLEDELAYEDEXPANSION
+
 echo ---------------- Executing %2 to drive %1 -----------------
 set DEST_DRIVE=%1
 "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\%2.ffs_batch"
 call :error
+@echo:
+@echo 1 ------
+del /s /q /f "%DEST_DRIVE%:\*.ffs_tmp"
+@echo 2 ------
+
 exit
 
 :error
