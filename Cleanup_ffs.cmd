@@ -1,3 +1,6 @@
+@echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION
 @echo.
 @echo -------------------------------------------------------------------------
 @echo Cleanup sync*.ffs_lock

@@ -22,10 +22,12 @@
 			<Item>\RECYCLED\</Item>
 			<Item>*\desktop.ini</Item>
 			<Item>*\thumbs.db</Item>
-			<Item>*\rtl_433.json</Item>
-			<Item>*\RecycleBin*</Item>
+            <Item>*Notes Google Play Livres*</Item>
+            <Item>*.gsheet</Item>
+            <Item>*.gdoc</Item>		
+			<Item>*rtl_433.json*</Item>	
+			<Item>*.ffs_tmp*</Item>				
 			<Item>.*</Item>
-			<!-- <Item>*\</Item> -->
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
 		<SizeMax Unit="None">0</SizeMax>
@@ -46,9 +48,12 @@
 					<Item>\RECYCLED\</Item>
 					<Item>*\desktop.ini</Item>
 					<Item>*\thumbs.db</Item>
-					<Item>*\RecycleBin*</Item>
+					<Item>*Notes Google Play Livres*</Item>
+					<Item>*.gsheet</Item>
+					<Item>*.gdoc</Item>		
+					<Item>*\rtl_433.json</Item>			
+					<Item>*.ffs_tmp*</Item>			
 					<Item>.*</Item>
-					<!-- <Item>*\</Item> -->
 				</Exclude>
 				<SizeMin Unit="None">0</SizeMin>
 				<SizeMax Unit="None">0</SizeMax>

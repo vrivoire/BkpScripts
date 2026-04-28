@@ -46,6 +46,7 @@
                     <Item>*\desktop.ini</Item>
                     <Item>*\thumbs.db</Item>
                     <Item>*\RecycleBin*</Item>
+					<Item>*.ffs_tmp*</Item>			
                     <Item>.*</Item>
                 </Exclude>
                 <SizeMin Unit="None">0</SizeMin>

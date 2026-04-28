@@ -1,4 +1,5 @@
 @echo off
+chcp 65001
 SETLOCAL ENABLEDELAYEDEXPANSION
 
 echo:
@@ -10,23 +11,24 @@ echo:
 @echo AppData     %AppData%
 echo:
 
-echo:
-@echo -------------------------------------------------------------------------
-@echo PoidsPression
-@echo -------------------------------------------------------------------------
-start PoidsPression.cmd
-@echo Fin PoidsPression ---------------------------------------------------------------
+REM echo:
+REM @echo -------------------------------------------------------------------------
+REM @echo PoidsPression
+REM @echo -------------------------------------------------------------------------
+REM start PoidsPression.cmd
+REM @echo Fin PoidsPression ---------------------------------------------------------------
 
 echo:
 @echo -------------------------------------------------------------------------
 @echo Nuage
 @echo -------------------------------------------------------------------------
-for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive) DO (
+for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive TeraBox) DO (
 	set TAG=%%~G
 	@echo PoidsPression vers !TAG! == %%~G ---------------------------------------------------	
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Nuage-SyncSettings.ffs_batch"
 	call :error
 	
+	dir /s /b "C:\Users\ADELE\!TAG!\*.ffs_tmp"
 	del /s /q /f "C:\Users\ADELE\!TAG!\*.ffs_tmp"
 	@echo ------
 )
@@ -62,6 +64,8 @@ for %%A in (G:) do (
 	set USB_DRIVE=%%A
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\usb_key-SyncSettings.ffs_batch"
 	call :error	
+	
+	dir /s /b "%USB_DRIVE%\*.ffs_tmp"
 	del /s /q /f "%USB_DRIVE%\*.ffs_tmp"
 	@echo ------
 )

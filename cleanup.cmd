@@ -1,4 +1,6 @@
 @echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION
 
 echo %SystemRoot%\Temp
 echo %HOMEDRIVE%%HOMEPATH%

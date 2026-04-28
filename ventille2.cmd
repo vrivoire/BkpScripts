@@ -1,4 +1,6 @@
 @echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION
 @echo .
 @echo Ventille les fichiers ect, bat, ffs_batch et les CVs
 @echo HOMEDRIVE   %HOMEDRIVE%

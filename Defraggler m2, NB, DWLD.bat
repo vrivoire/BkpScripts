@@ -1,4 +1,6 @@
 @echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION
 @echo ...................................................
 
 set PATH_LIST=%PATH_LIST% %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\NetBeans 

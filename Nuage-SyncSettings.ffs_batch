@@ -16,26 +16,24 @@
 			<Item>*</Item>
 		</Include>
 		<Exclude>
-			<Item>\System Volume Information\</Item>
-			<Item>\$Recycle.Bin\</Item>
-			<Item>\RECYCLER\</Item>
-			<Item>\RECYCLED\</Item>
-			<Item>*desktop.ini*</Item>
+			<Item>*\System Volume Information</Item>
+			<Item>*\$Recycle.Bin</Item>
+			<Item>*\RECYCLER</Item>
+			<Item>*\RECYCLED</Item>
+			<Item>*\desktop.ini</Item>
 			<Item>*\thumbs.db</Item>
 			<Item>*\.Trash</Item>
 			<Item>*\.dropbox.cache</Item>
-			<Item>*Rubbish*</Item>
-			<Item>*RecycleBin*</Item>
-            <Item>*.gsheet</Item>
-            <Item>*.gdoc</Item>
-            <Item>*.ffs_tmp*</Item>
-            <Item>desktop.ini</Item>
-            <Item>*.!qB</Item>		
-			<Item>*rtl_433.json*</Item>			
-            <Item>*Notes Google Play Livres*</Item>
-			<Item>*ImdbSearch.db*</Item>
-			<Item>*rtl_433*</Item>
-			<Item>*Renpho Health-R_PmJP0*</Item>
+			<Item>*\Rubbish*</Item>
+			<Item>*\RecycleBin*</Item>
+            <Item>*\*.gsheet</Item>
+            <Item>*\*.gdoc</Item>
+            <Item>*\*.ffs_tmp*</Item>            
+            <Item>*\*.!qB</Item>		
+			<Item>*\rtl_433.json</Item>			
+            <Item>*\Notes Google Play Livres*</Item>
+			<Item>*\rtl_433</Item>
+			<Item>*\Renpho Health-R_PmJP0</Item>
 			<Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
@@ -57,11 +55,13 @@
 					<Item>\RECYCLED\</Item>
 					<Item>*\desktop.ini</Item>
 					<Item>*\thumbs.db</Item>
-					<Item>*\.Trash</Item>
-					<Item>*\.dropbox.cache</Item>
-					<Item>*\Rubbish</Item>
-					<Item>.*</Item>
+					<Item>*Notes Google Play Livres*</Item>
+					<Item>*.gsheet</Item>
+					<Item>*.gdoc</Item>		
+					<Item>*rtl_433.json*</Item>			
+					<Item>*.ffs_tmp*</Item>	
 					<Item>*\</Item>
+					<Item>.*</Item>
 				</Exclude>
 				<SizeMin Unit="None">0</SizeMin>
 				<SizeMax Unit="None">0</SizeMax>
@@ -124,30 +124,8 @@
 			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\%USERNAME%\Santé</Right>
 		</Pair>
 		<Pair>
-			<Left>C:\Users\ADELE\Documents\PoidsPression</Left>
-			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression</Right>
-			<Filter>
-				<Include>
-					<Item>*</Item>
-				</Include>
-				<Exclude>
-					<Item>*.gsheet</Item>
-					<Item>\System Volume Information\</Item>
-					<Item>\$Recycle.Bin\</Item>
-					<Item>\RECYCLER\</Item>
-					<Item>\RECYCLED\</Item>
-					<Item>*\desktop.ini</Item>
-					<Item>*\thumbs.db</Item>
-					<Item>*\.Trash</Item>
-					<Item>*\.dropbox.cache</Item>
-					<Item>*\Rubbish</Item>
-					<Item>.*</Item>
-					<Item>*\</Item>
-				</Exclude>
-				<SizeMin Unit="None">0</SizeMin>
-				<SizeMax Unit="None">0</SizeMax>
-				<TimeSpan Type="None">0</TimeSpan>
-			</Filter>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\PoidsPression</Left>
+			<Right>%HOMEDRIVE%%HOMEPATH%\%TAG%\PoidsPression</Right>			
 		</Pair>
 	</FolderPairs>
 	<Errors Ignore="true" Retry="0" Delay="5"/>

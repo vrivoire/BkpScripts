@@ -1,4 +1,7 @@
 @echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION
+
 set EXE="C:\Program Files\MKVToolNix\mkvtoolnix-gui.exe"
 @echo
 

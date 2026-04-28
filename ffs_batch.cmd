@@ -1,4 +1,6 @@
 @echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION
 for %%A in (1 2 3) do call :bkp %%A
 rem for %%A in (1 2) do call :bkp %%A
 exit

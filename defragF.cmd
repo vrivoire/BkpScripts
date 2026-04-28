@@ -1,4 +1,7 @@
 @echo off
+chcp 65001
+SETLOCAL ENABLEDELAYEDEXPANSION+
+
 
 FOR %%A IN ($MFT $LogFile $Volume $AttrDef $Bitmap $Boot $BadClus $Secure $UpCase $Extend) DO CALL :CONTIG %%A
 

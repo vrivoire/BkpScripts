@@ -26,6 +26,7 @@
             <Item>*.gsheet</Item>
             <Item>*.gdoc</Item>		
 			<Item>*\rtl_433.json</Item>			
+			<Item>*.ffs_tmp*</Item>			
 			<Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
