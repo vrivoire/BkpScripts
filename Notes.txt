@@ -28,13 +28,12 @@ H1X3J7
 
 Alt R
 
-
+C:\Users\ADELE\AppData\Local\Microsoft\WindowsApps\MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe\WsaClient.exe
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 
 Le retour d'Anna Brodeur			25/04
 
-Privilèges							01/05
 Vitrerie Joyal						06/05
 Margo's Got Money Troubles			20/05
 Elsbeth 14-20						22/05
@@ -43,6 +42,8 @@ Marshals							24/05
 The Testaments						27/05
 For All Mankind 5					29/05
 The Audacity                        31/05
+
+Widow's Bay							17/06
 
 The Odyssey							  /07
 Silo								  /07

@@ -1,3 +1,5 @@
+Start C:\Users\ADELE\Documents\BkpScripts\cleanup.cmd 
+
 :: Batch Script Created by FreeBooter
 
 @Echo Off & Cls
