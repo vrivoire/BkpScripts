@@ -43,8 +43,8 @@
     </Filter>
     <FolderPairs>
         <Pair>
-            <Left>F:\ADELE\Programs</Left>
-            <Right>K:\ADELE\Programs</Right>
+            <Left>K:\ADELE\Programs</Left>
+            <Right>F:\ADELE\Programs</Right>
             <Filter>
                 <Include>
                     <Item>*</Item>

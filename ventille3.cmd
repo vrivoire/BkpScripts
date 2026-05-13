@@ -20,6 +20,13 @@ REM @echo Fin PoidsPression ----------------------------------------------------
 
 echo:
 @echo -------------------------------------------------------------------------
+@echo usb_key
+@echo -------------------------------------------------------------------------
+start "USB Key" %HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\usb_key.cmd"
+@echo Fin usb_key -------------------------------------------------------------
+
+echo:
+@echo -------------------------------------------------------------------------
 @echo Nuage
 @echo -------------------------------------------------------------------------
 for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive TeraBox) DO (
@@ -56,22 +63,6 @@ for %%A in (F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts
 @echo Fin Documents -----------------------------------------------------------
 
 echo:
-@echo -------------------------------------------------------------------------
-@echo usb_key
-@echo -------------------------------------------------------------------------
-for %%A in (G:) do (
-	@echo USB Key in %%A -------------------------------------------------------
-	set USB_DRIVE=%%A
-	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\usb_key-SyncSettings.ffs_batch"
-	call :error	
-	
-	dir /s /b "%USB_DRIVE%\*.ffs_tmp"
-	del /s /q /f "%USB_DRIVE%\*.ffs_tmp"
-	@echo ------
-)
-@echo Fin usb_key -------------------------------------------------------------
-
-echo:
 @echo Fin ffs_batch -----------------------------------------------------------
 echo:
 
@@ -79,14 +70,6 @@ echo:
 @echo %HOMEDRIVE%%HOMEPATH%\AppData\Roaming\FreeFileSync\Logs
 rem pause
 exit
-
-:usb_key
-	@echo USB Key in %1 -------------------------------------------------------
-	set USB_DRIVE=%1
-	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\usb_key-SyncSettings.ffs_batch"
-	call :error
-	exit /b
-
 
 :error
 	if not %errorlevel% == 0 (
