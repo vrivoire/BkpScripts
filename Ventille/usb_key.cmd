@@ -17,10 +17,10 @@ for %%A in (G:) do (
 	set USB_DRIVE=%%A
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventille\usb_key-SyncSettings.ffs_batch"
 	call :error	
-	@echo ------
-	dir /s /b "%USB_DRIVE%\*.ffs_tmp"
-	del /s /q /f "%USB_DRIVE%\*.ffs_tmp"
-	@echo ------	
+	REM @echo ------
+	REM dir /s /b "%USB_DRIVE%\*.ffs_tmp"
+	REM del /s /q /f "%USB_DRIVE%\*.ffs_tmp"
+	REM @echo ------	
 )
 exit
 

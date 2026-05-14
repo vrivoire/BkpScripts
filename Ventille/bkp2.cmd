@@ -16,6 +16,12 @@ echo ---------------- Executing %2 to drive %1 -----------------
 set DEST_DRIVE=%1
 "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventille\%2.ffs_batch"
 call :error
+
+REM @echo ------
+REM dir /s /b "%DEST_DRIVE%:\*.ffs_tmp"
+REM del /s /q /f "%DEST_DRIVE%:\*.ffs_tmp"
+REM @echo ------	
+REM pause
 exit
 
 :error
