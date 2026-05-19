@@ -10,5 +10,3 @@ sudo aptitude safe-upgrade
 
 lsb_release -d
 
-
-# wsl.exe -d Ubuntu-26.04
