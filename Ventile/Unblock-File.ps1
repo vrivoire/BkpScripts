@@ -1,0 +1,1 @@
+Get-ChildItem -Path "$env:HOMEDRIVE$env:HOMEPATH" -Recurse | Unblock-File -ErrorAction SilentlyContinue
