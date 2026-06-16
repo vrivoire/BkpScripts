@@ -8,6 +8,7 @@ echo:
 @echo USERDOMAIN  %USERDOMAIN%
 @echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
+@echo IS_DEBUG    %IS_DEBUG%
 echo:
 
 title Nuage
@@ -27,6 +28,9 @@ for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive TeraBox) DO (
 	@echo ------
 )
 @echo Fin Nuage ---------------------------------------------------------------
+
+if "%IS_DEBUG%"=="TRUE" pause
+
 exit
 
 :error

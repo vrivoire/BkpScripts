@@ -8,6 +8,7 @@ echo:
 @echo USERDOMAIN  %USERDOMAIN%
 @echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
+@echo IS_DEBUG    %IS_DEBUG%
 echo:
 
 title Videos 
@@ -17,6 +18,9 @@ title Videos
 @echo -------------------------------------------------------------------------
 for %%A in (E F K) do start "bkp2 %%A" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventile\bkp2.cmd" %%A Videos
 @echo Fin Videos --------------------------------------------------------------
+
+if "%IS_DEBUG%"=="TRUE" pause
+
 exit
 
 :error

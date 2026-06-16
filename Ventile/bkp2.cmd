@@ -8,6 +8,7 @@ echo:
 @echo USERDOMAIN  %USERDOMAIN%
 @echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
+@echo IS_DEBUG    %IS_DEBUG%
 echo:
 
 title bkp2 %1 %2
@@ -22,6 +23,9 @@ REM dir /s /b "%DEST_DRIVE%:\*.ffs_tmp"
 REM del /s /q /f "%DEST_DRIVE%:\*.ffs_tmp"
 REM @echo ------	
 REM pause
+
+if "%IS_DEBUG%"=="TRUE" pause
+
 exit
 
 :error

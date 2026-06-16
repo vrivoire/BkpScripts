@@ -8,6 +8,7 @@ echo:
 @echo USERDOMAIN  %USERDOMAIN%
 @echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
+@echo IS_DEBUG    %IS_DEBUG%
 echo:
 
 title usb_key
@@ -22,6 +23,9 @@ for %%A in (D) do (
 	REM del /s /q /f "%USB_DRIVE%\*.ffs_tmp"
 	REM @echo ------	
 )
+
+if "%IS_DEBUG%"=="TRUE" pause
+
 exit
 
 :error

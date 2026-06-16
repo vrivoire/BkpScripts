@@ -10,6 +10,8 @@ echo:
 @echo AppData     %AppData%
 @echo:
 
+set IS_DEBUG=FALSE
+
 REM @echo Unblock-File...
 REM pwsh.exe -ExecutionPolicy Bypass -File "C:\Users\ADELE\Documents\BkpScripts\Ventile\Unblock-File.ps1"
 

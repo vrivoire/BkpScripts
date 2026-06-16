@@ -8,6 +8,7 @@ echo:
 @echo USERDOMAIN  %USERDOMAIN%
 @echo USERNAME    %USERNAME%
 @echo AppData     %AppData%
+@echo IS_DEBUG    %IS_DEBUG%
 echo:
 
 title PoidsPression
@@ -23,6 +24,8 @@ for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive TeraBox) DO (
 	del /s /q /f "%HOMEDRIVE%%HOMEPATH%\!TAG!\PoidsPression\*.ffs_tmp"
 	echo --------------------
 )
+
+if "%IS_DEBUG%"=="TRUE" pause
 
 exit
 
