@@ -6,9 +6,54 @@ echo %SystemRoot%\Temp
 echo %HOMEDRIVE%%HOMEPATH%
 
 
-@echo .
+@echo:
 @echo Netoie les fichiers temporaires
-@echo .
+@echo:
+
+rem taskkill /F /IM chrome.exe
+REM del /q /f /s "%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache\Cache_Data"
+
+taskkill /F /IM msedge.exe
+del /q /f /s "%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Cache"
+
+REM echo Stopping Windows Update service...
+REM net stop wuauserv
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Running System File Checker...
+REM start "Running System File Checker..." cmd /k "sfc /scannow"
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Cleaning User Temp files...
+REM del /q /f /s %temp%\*
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Cleaning System Temp files...
+REM del /q /f /s %systemroot%\Temp\*
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Cleaning Windows Update cache...
+REM rmdir /s /q %systemroot%\SoftwareDistribution\Download
+REM mkdir %systemroot%\SoftwareDistribution\Download
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Cleaning Prefetch files...
+REM del /q /f /s %systemroot%\Prefetch\*
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Restarting Windows Update service...
+REM net start wuauserv
+REM @echo ------------------------------------------------------
+REM echo:
+
+REM echo Cleanup Complete!
+
 
 rem @echo clean up ----------------------------------------
 rem cd %HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects
