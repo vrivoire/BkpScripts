@@ -153,11 +153,11 @@ rmdir /s /q Temp
 mkdir Temp
 
 @echo Reset an Internet Connection --------------------------------------------
-call ipconfig /release
-call ipconfig /flushdns
-call ipconfig /renew
-call netsh int ip reset
-call netsh winsock reset
+netsh winsock reset
+netsh int ip reset
+ipconfig /flushdns
+ipconfig /release
+ipconfig /renew
 
 @echo .
 FOR %%A IN ($MFT $LogFile $Volume $AttrDef $Bitmap $Boot $BadClus $Secure $UpCase $Extend) DO CALL :CONTIG %%A

@@ -24,6 +24,15 @@
             <Item>*\thumbs.db</Item>
 			<Item>*\rtl_433.json</Item>
             <Item>*\RecycleBin*</Item>
+			<Item>*.ffs_tmp*</Item>	
+			<Item>*\PoidsPression\dist\*</Item>
+			<Item>*\PoidsPression\build\*</Item>
+			<Item>*\PoidsPression\.venv\*</Item>
+			<Item>*\ThermoPro\dist\*</Item>
+			<Item>*\ThermoPro\build\*</Item>
+			<Item>*\ThermoPro\.venv\*</Item>
+			<Item>*\ImdbSearchPY\.venv\*</Item>			
+			<Item>*.log</Item>	
             <Item>.*</Item>
         </Exclude>
         <SizeMin Unit="None">0</SizeMin>
@@ -39,15 +48,24 @@
                     <Item>*</Item>
                 </Include>
                 <Exclude>
-                    <Item>\System Volume Information\</Item>
-                    <Item>\$Recycle.Bin\</Item>
-                    <Item>\RECYCLER\</Item>
-                    <Item>\RECYCLED\</Item>
-                    <Item>*\desktop.ini</Item>
-                    <Item>*\thumbs.db</Item>
-                    <Item>*\RecycleBin*</Item>
-					<Item>*.ffs_tmp*</Item>			
-                    <Item>.*</Item>
+					<Item>\System Volume Information\</Item>
+					<Item>\$Recycle.Bin\</Item>
+					<Item>\RECYCLER\</Item>
+					<Item>\RECYCLED\</Item>
+					<Item>*\desktop.ini</Item>
+					<Item>*\thumbs.db</Item>
+					<Item>*\rtl_433.json</Item>
+					<Item>*\RecycleBin*</Item>
+					<Item>*.ffs_tmp*</Item>	
+					<Item>*\PoidsPression\dist\*</Item>
+					<Item>*\PoidsPression\build\*</Item>
+					<Item>*\PoidsPression\.venv\*</Item>
+					<Item>*\ThermoPro\dist\*</Item>
+					<Item>*\ThermoPro\build\*</Item>
+					<Item>*\ThermoPro\.venv\*</Item>
+					<Item>*\ImdbSearchPY\.venv\*</Item>	
+					<Item>*.log</Item>	
+					<Item>.*</Item>
                 </Exclude>
                 <SizeMin Unit="None">0</SizeMin>
                 <SizeMax Unit="None">0</SizeMax>

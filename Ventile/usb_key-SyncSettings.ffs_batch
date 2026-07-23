@@ -16,18 +16,25 @@
 			<Item>*</Item>
 		</Include>
 		<Exclude>
-			<Item>\System Volume Information\</Item>
-			<Item>\$Recycle.Bin\</Item>
-			<Item>\RECYCLER\</Item>
-			<Item>\RECYCLED\</Item>
-			<Item>*\desktop.ini</Item>
-			<Item>*\thumbs.db</Item>
-            <Item>*Notes Google Play Livres*</Item>
-            <Item>*.gsheet</Item>
-            <Item>*.gdoc</Item>		
-			<Item>*\rtl_433.json</Item>			
-			<Item>*.ffs_tmp*</Item>			
-			<Item>.*</Item>
+            <Item>\System Volume Information\</Item>
+            <Item>\$Recycle.Bin\</Item>
+            <Item>\RECYCLER\</Item>
+            <Item>\RECYCLED\</Item>
+            <Item>*\desktop.ini</Item>
+            <Item>*\thumbs.db</Item>
+			<Item>*\rtl_433.json</Item>
+            <Item>*\RecycleBin*</Item>
+			<Item>*.ffs_tmp*</Item>	
+			<Item>*\PoidsPression\dist\*</Item>
+			<Item>*\PoidsPression\build\*</Item>
+			<Item>*\PoidsPression\.venv\*</Item>
+			<Item>*\ThermoPro\dist\*</Item>
+			<Item>*\ThermoPro\build\*</Item>
+			<Item>*\ThermoPro\.venv\*</Item>
+			<Item>*\ImdbSearchPY\.venv\*</Item>	
+			<Item>*\ImdbSearch\target\*</Item>
+			<Item>*.log</Item>		
+            <Item>.*</Item>
 		</Exclude>
 		<SizeMin Unit="None">0</SizeMin>
 		<SizeMax Unit="None">0</SizeMax>
@@ -42,14 +49,26 @@
 					<Item>*</Item>
 				</Include>
 				<Exclude>
-					<Item>\System Volume Information\</Item>
-					<Item>\$Recycle.Bin\</Item>
-					<Item>\RECYCLER\</Item>
-					<Item>\RECYCLED\</Item>
-					<Item>*\desktop.ini</Item>
-					<Item>*\thumbs.db</Item>
-					<Item>*\RecycleBin*</Item>
-					<Item>.*</Item>
+				<Item>\System Volume Information\</Item>
+				<Item>\$Recycle.Bin\</Item>
+				<Item>\RECYCLER\</Item>
+				<Item>\RECYCLED\</Item>
+				<Item>*\desktop.ini</Item>
+				<Item>*\thumbs.db</Item>
+				<Item>*\rtl_433.json</Item>
+				<Item>*\RecycleBin*</Item>
+				<Item>*.ffs_tmp*</Item>	
+				<Item>*\PoidsPression\dist\*</Item>
+				<Item>*\PoidsPression\build\*</Item>
+				<Item>*\PoidsPression\.venv\*</Item>
+				<Item>*\ThermoPro\dist\*</Item>
+				<Item>*\ThermoPro\build\*</Item>
+				<Item>*\ThermoPro\.venv\*</Item>
+				<Item>*\ImdbSearchPY\.venv\*</Item>			
+				<Item>*\ImdbSearch\target\*</Item>	
+				<Item>*.log</Item>	
+				<Item>.*</Item>				
+				<Item>.*</Item>
 					<Item>*\</Item>
 				</Exclude>
 				<SizeMin Unit="None">0</SizeMin>
@@ -104,6 +123,10 @@
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\PoidsPression</Left>
 			<Right>%USB_DRIVE%\%USERNAME%\PoidsPression</Right>
+		</Pair>
+		<Pair>
+			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects</Left>
+			<Right>%USB_DRIVE%\%USERNAME%\NetBeansProjects</Right>
 		</Pair>
 	</FolderPairs>
 	<Errors Ignore="false" Retry="0" Delay="5"/>
