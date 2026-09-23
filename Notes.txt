@@ -1,7 +1,7 @@
+remote desktop: 361511
+
 
 Kaboom123.,
-
-Babam456.79
 
 Hilo	rivoire.vincent@gmail.com / Elcv753.,
 
@@ -26,6 +26,8 @@ MP: Mlvelc852./9
 mLvelc456?
 
 WSA 2211
+Windows Subsystem For Android: Windows 11 x64 (Windows_11_WSA_2211.40000.10.0_x64)
+https://github.com/MustardChef/WSABuilds/releases/tag/Windows_11_2211.40000.10.0
 
 Alt R
 
@@ -34,17 +36,19 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
  
 Le Gouffre Lumineux					09/07 ????
 
-Lucky								20/08
-Spooky in Love						23/08
-One Hundred Years of Solitude		26/08
-Furious								31/08
 
-Silo								04/09
-Ted Lasso							04/09
-Stuart Fails to Save the Universe	24/09
+
+Stuart Fails to Save the Universe	25/09
 Futurama 							29/09
+North of North						29/09
 Women in Blue						30/09
 
+Youth 2026							01/10
+Lanterns							05/10
+Ted Lasso							07/10
+Anna Pigeon							10/10
+Slow Horses							21/10
+The Diplomat						22/10
 Station Eleven						23/10
 Necromancer							????
 

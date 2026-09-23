@@ -17,7 +17,7 @@ echo:
 @echo -------------------------------------------------------------------------
 @echo Nuage
 @echo -------------------------------------------------------------------------
-for %%G in ("GoogleDrive" OneDrive Mega Icedrive TeraBox PCloud "NordLocker_913740\My Files") DO (
+for %%G in ("GoogleDrive" OneDrive Mega TeraBox PCloud) DO (
 	set TAG=%%~G
 	@echo PoidsPression vers !TAG! == %%~G ---------------------------------------------------	
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventile\Nuage-SyncSettings.ffs_batch"

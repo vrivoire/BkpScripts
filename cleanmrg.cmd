@@ -1,3 +1,5 @@
+taskkill /f /im NordVPN.exe
+
 Start C:\Users\ADELE\Documents\BkpScripts\cleanup.cmd 
 
 :: Batch Script Created by FreeBooter
