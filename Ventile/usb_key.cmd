@@ -13,6 +13,8 @@ echo:
 
 title usb_key
 
+if "%IS_DEBUG%"=="TRUE" @echo on
+
 for %%A in (D) do (
 	@echo USB Key in %%A -------------------------------------------------------
 	set USB_DRIVE=%%A:

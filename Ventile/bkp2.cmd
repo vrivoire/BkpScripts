@@ -13,6 +13,8 @@ echo:
 
 title bkp2 %1 %2
 
+if "%IS_DEBUG%"=="TRUE" @echo on
+
 echo ---------------- Executing %2 to drive %1 -----------------
 set DEST_DRIVE=%1
 "C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventile\%2.ffs_batch"

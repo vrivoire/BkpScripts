@@ -11,6 +11,8 @@ echo:
 @echo IS_DEBUG    %IS_DEBUG%
 echo:
 
+if "%IS_DEBUG%"=="TRUE" @echo on
+
 title Nuage
 
 echo:
@@ -23,6 +25,7 @@ for %%G in ("GoogleDrive" OneDrive Mega TeraBox PCloud) DO (
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventile\Nuage-SyncSettings.ffs_batch"
 	call :error
 	
+	@echo Cleanup *.ffs_tmp
 	dir /s /b "C:\Users\ADELE\!TAG!\*.ffs_tmp"
 	del /s /q /f "C:\Users\ADELE\!TAG!\*.ffs_tmp"
 	@echo ------

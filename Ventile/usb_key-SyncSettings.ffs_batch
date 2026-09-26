@@ -43,7 +43,7 @@
 	<FolderPairs>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents</Left>
-			<Right>%USB_DRIVE%\%USERNAME%</Right>
+			<Right>%USB_DRIVE%\ADELE</Right>
 			<Filter>
 				<Include>
 					<Item>*</Item>
@@ -78,51 +78,51 @@
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\zip</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\zip</Right>
+			<Right>%USB_DRIVE%\ADELE\zip</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\302-4240 Chambly</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\302-4240 Chambly</Right>
+			<Right>%USB_DRIVE%\ADELE\302-4240 Chambly</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Factures</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Factures</Right>
+			<Right>%USB_DRIVE%\ADELE\Factures</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\CV_Vincent</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\CV_Vincent</Right>
+			<Right>%USB_DRIVE%\ADELE\CV_Vincent</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Scotia</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Scotia</Right>
+			<Right>%USB_DRIVE%\ADELE\Scotia</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\BkpScripts</Right>
+			<Right>%USB_DRIVE%\ADELE\BkpScripts</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Impôts</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Impôts</Right>
+			<Right>%USB_DRIVE%\ADELE\Impôts</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Voiture</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Voiture</Right>
+			<Right>%USB_DRIVE%\ADELE\Voiture</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Parents</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Parents</Right>
+			<Right>%USB_DRIVE%\ADELE\Parents</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\Santé</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\Santé</Right>
+			<Right>%USB_DRIVE%\ADELE\Santé</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\PoidsPression</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\PoidsPression</Right>
+			<Right>%USB_DRIVE%\ADELE\PoidsPression</Right>
 		</Pair>
 		<Pair>
 			<Left>%HOMEDRIVE%%HOMEPATH%\Documents\NetBeansProjects</Left>
-			<Right>%USB_DRIVE%\%USERNAME%\NetBeansProjects</Right>
+			<Right>%USB_DRIVE%\ADELE\NetBeansProjects</Right>
 		</Pair>
 	</FolderPairs>
 	<Errors Ignore="false" Retry="0" Delay="5"/>

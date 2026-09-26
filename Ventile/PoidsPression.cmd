@@ -13,7 +13,9 @@ echo:
 
 title PoidsPression
 
-for %%G in ("GoogleDrive\Mon disque" OneDrive Mega Icedrive TeraBox) DO (
+if "%IS_DEBUG%"=="TRUE" @echo on
+
+for %%G in ("GoogleDrive" OneDrive Mega Icedrive TeraBox) DO (
 	set TAG=%%~G
 	@echo PoidsPression vers %TAG% . %%~G ---------------------------------------------------	
 	"C:\Program Files\FreeFileSync\FreeFileSync.exe" "%HOMEDRIVE%%HOMEPATH%\Documents\BkpScripts\Ventile\PoidsPression-SyncSettings.ffs_batch"
